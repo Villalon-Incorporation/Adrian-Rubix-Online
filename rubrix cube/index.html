@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrian's Rubix Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ui-panel">
+    <div class="title">Adrian's Rubix Online</div>
+    <label class="field">
+      <span>Player name</span>
+      <input id="playerName" type="text" placeholder="Enter your name" maxlength="12" />
+    </label>
+    <div class="button-row">
+      <button type="button" id="saveGame">Save Game</button>
+      <button type="button" id="resetCube">Reset Cube</button>
+      <button type="button" id="scrambleCube">Scramble</button>
+    </div>
+    <div class="button-row small-row">
+      <button type="button" id="toggleGrid">Toggle Guide</button>
+    </div>
+    <div class="contact-box">
+      <div class="contact-label">Instagram</div>
+      <div class="contact-value">@SoloAdrian08</div>
+      <div class="contact-label">Cash App</div>
+      <div class="contact-value">SoloAdrian08</div>
+    </div>
+    <div class="actions">
+      <div>Rotate faces</div>
+      <div class="move-grid">
+        <button data-move="U">U</button>
+        <button data-move="U'">U'</button>
+        <button data-move="D">D</button>
+        <button data-move="D'">D'</button>
+        <button data-move="L">L</button>
+        <button data-move="L'">L'</button>
+        <button data-move="R">R</button>
+        <button data-move="R'">R'</button>
+        <button data-move="F">F</button>
+        <button data-move="F'">F'</button>
+        <button data-move="B">B</button>
+        <button data-move="B'">B'</button>
+      </div>
+    </div>
+    <div class="status">Drag the cube with your mouse. Use moves or scramble to play.</div>
+  </div>
+
+  <div class="scene">
+    <div class="cube" id="cube"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
